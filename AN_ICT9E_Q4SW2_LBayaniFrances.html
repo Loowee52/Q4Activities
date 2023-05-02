@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display&family=Ysabeau:ital,wght@1,300&display=swap" rel="stylesheet">
+	<title>Q4 Seatwork 2</title>
+	<style type="text/css">
+		body{
+			background-color: #f06598;
+		}
+		.container{
+			padding: 25px;
+			background-color: #FFFFFF;
+		}
+		h4{
+			font-family: 'Ysabeau', sans-serif;
+ ;
+		}
+	</style>
+</head>
+<body>
+	<div class="container">
+	<h1></h1>
+	<p id="DT"></p>
+
+	<script type="text/javascript">
+		const D = new Date();
+		document.getElementById('DT').innerHTML = D;
+	</script>
+
+    <h1 class="text-center" style="font-family: cursive;">FAHRENHEIT TO CELSIUS</h1>
+	
+	<center><form>
+		Enter a Number: <input type="text" id="num1">
+		<button type="submit" onclick="Compute()" class="btn btn-danger">Convert</button>
+	</form>
+
+	<script type="text/javascript">
+		function Compute(){
+			let temp = document.getElementById("num1").value;
+			let celsius = Number(temp - 32);
+			let product = Number(celsius * 5/9)
+			
+
+			window.alert("In celsius: " + product);
+		}
+	</script>
+</center>
+	<h4>The average body temperature in fahrenheit is 98.6.</h4>
+	<h4>The room temperature in fahrenheit is 69.8.</h4>
+	<h4>The boiling point of water temperature in fahrenheit is 212.0.</h4>
+	<h4>The freezing/melting point temperature in fahrenheit is 32.0.</h4>
+	<h4>The absolute zero temperature in fahrenheit is -459.67.</h4>
+</div>
+
+</body>
+</html>
